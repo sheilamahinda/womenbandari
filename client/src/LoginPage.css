@@ -1,0 +1,161 @@
+/* LoginPage.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .contact-btn {
+    background-color: #16423C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    flex: 1;
+  }
+  
+  .login-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .login-left h1 {
+    font-size: 48px;
+  }
+  
+  .login-left p {
+    font-size: 18px;
+  }
+  
+  .login-illustration {
+    margin-top: 20px;
+    width: 80%;
+  }
+  
+  .login-right {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-right h2 {
+    margin-bottom: 20px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .forgot-password {
+    align-self: flex-end;
+  }
+  
+  .forgot-password a {
+    color: #16423C;
+    text-decoration: none;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #16423C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .or {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .social-login-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .footer-container {
+    background-color: #f9f9f9;
+    color: black;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subscribe-section input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 300px;
+  }
+  
+  .subscribe-btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: #16423C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

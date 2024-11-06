@@ -1,0 +1,168 @@
+
+
+.success-stories {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    
+}
+.success-stories h2{
+    color: #000;
+}
+.success-stories h3{
+    font-size: 20px;
+    color: #000;
+}
+.success-stories p{
+    color: #000;
+}
+
+.story-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.story-card {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 20px); /* Adjust for responsiveness */
+}
+
+.category {
+    font-style: italic;
+    color: #6A9C89;
+}
+
+/* Add styles for the user submissions form */
+.user-submissions {
+    padding: 20px;
+    background-color: #fff;
+}
+.user-submissions h2{
+    color: #000;
+}
+.user-submissions input,
+.user-submissions textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-submissions button {
+    background-color: #16423C;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Reuse or adjust other styles as necessary */
+/* ServicesPage.css */
+
+/* Main container styling */
+.services {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    color: #000; /* Changed text color to black */
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    color: #000; /* Changed text color to black */
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Service content styling */
+  .service-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pushes text and image to far ends */
+    padding: 40px 20px;
+    gap: 20px;
+  }
+  
+  .service-section img.service-image {
+    width:  550px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px;
+    margin-right: auto; /* Ensures image sticks to the left */
+  }
+  
+  .service-section .content {
+    max-width: 600px;
+    margin-left: auto; /* Ensures text sticks to the right */
+    text-align: left; /* Align text to the left within the content box */
+  }
+  
+  .service-section.alt-layout {
+    flex-direction: row-reverse; /* Reverse layout for alternating sections */
+  }
+  
+  .service-section.alt-layout img.service-image {
+    margin-left: auto; /* Ensures image sticks to the right */
+  }
+  
+  .service-section.alt-layout .content {
+    margin-right: auto; /* Ensures text sticks to the left in alternate layout */
+  }
+  
+  .service-section h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #16423C; /* Adjust as needed */
+  }
+  
+  .service-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; /* Adjust color as needed */
+  }
+  
+  
+  
+  /* Button styling for the links */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #00796b;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #004d40;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .services h2 {
+      font-size: 1.75rem;
+    }
+  
+    .service-section {
+      padding: 15px;
+    }
+  
+    .service-section h3 {
+      font-size: 1.25rem;
+    }
+  
+    .button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }

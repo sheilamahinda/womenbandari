@@ -1,0 +1,106 @@
+.budget-planner {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .budget-planner h3 {
+    font-size: 24px;
+    color: #4a90e2;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .budget-planner input[type="number"],
+  .budget-planner input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .budget-planner label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #555;
+  }
+  
+  .budget-planner .alert {
+    background-color: #ffe6e6;
+    color: #d9534f;
+    border-left: 4px solid #d9534f;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .budget-planner .financial-summary {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9f7ef;
+    border-radius: 8px;
+    color: #3c763d;
+  }
+  
+  .budget-planner .financial-summary h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .budget-planner .financial-summary p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: bl;
+    color: black;
+  }
+  
+  .budget-planner .recharts-wrapper {
+    margin: 20px 0;
+  }
+  
+  .budget-planner .recharts-tooltip-wrapper {
+    background-color: #333;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .budget-planner .recharts-legend-item {
+    color: #555;
+  }
+  
+  .budget-planner button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .budget-planner button:hover {
+    background-color: #357ab7;
+  }
+  
+  .insights {
+    color: black; /* Set text color to black */
+    font-size: 1em; /* Adjust font size as needed */
+    margin-top: 1em; /* Add some space above the insights text */
+  }

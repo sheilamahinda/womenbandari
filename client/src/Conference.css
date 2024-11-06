@@ -1,0 +1,151 @@
+/* Overall App Container */
+.app-container {
+    display: flex; /* Align sidebar and main content side by side */
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    background-color: #f8f9fa; /* Light background for sidebar */
+    padding: 20px; /* Padding inside the sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.sidebar-logo img {
+    height: 50px; /* Height for logo */
+    margin-bottom: 20px; /* Space below logo */
+}
+
+.sidebar-menu {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar-menu .menu-item {
+    padding: 15px 0; /* Padding for menu items */
+    cursor: pointer; /* Cursor indicates clickable items */
+    font-size: 16px; /* Font size for menu items */
+    border-radius: 5px; /* Rounded corners */
+    color: #333; /* Text color */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.sidebar-menu .menu-item.active, 
+.sidebar-menu .menu-item:hover {
+    background-color: #e0e0e0; /* Background on hover/active */
+}
+
+.upgrade-button {
+    margin-top: auto; /* Push button to the bottom */
+    background-color: #16423C; /* Dark background for button */
+    color: #fff; /* White text for button */
+    padding: 10px 15px; /* Padding inside button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Full width of sidebar */
+    cursor: pointer; /* Cursor indicates clickable */
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex; /* Flexbox for navbar items */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    background-color: #fff; /* White background */
+    padding: 15px 30px; /* Padding inside navbar */
+    position: sticky; /* Navbar stays on top during scroll */
+    top: 0; /* Stick to top */
+    z-index: 1000; /* Ensure navbar is above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.nav-logo img {
+    height: 50px; /* Height for logo */
+}
+
+.nav-links {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Horizontal layout for links */
+    gap: 20px; /* Space between links */
+}
+
+.nav-links li {
+    font-size: 16px; /* Font size for links */
+}
+
+.contact-btn {
+    background-color: #16423C; /* Brown background for button */
+    color: #fff; /* White text */
+    padding: 10px 15px; /* Padding inside button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor indicates clickable */
+}
+
+/* Dashboard styles */
+.dashboard-container {
+    display: flex; /* Flexbox for dashboard items */
+    flex-direction: column; /* Vertical layout */
+    padding: 20px; /* Padding inside dashboard */
+    background-color: #fff; /* White background */
+    flex-grow: 1; /* Allow dashboard to grow and fill space */
+}
+
+.dashboard-header {
+    display: flex; /* Flexbox for header items */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Space below header */
+}
+
+.dashboard-header h2 {
+    font-size: 24px; /* Font size for title */
+    font-weight: bold; /* Bold title */
+    color: #333; /* Dark text color */
+}
+
+.video-section {
+    display: flex; /* Flexbox for video section */
+    justify-content: center; /* Center video */
+    margin-bottom: 20px; /* Space below video */
+}
+
+.video-conference {
+    width: 300px; /* Fixed width for video */
+    height: auto; /* Auto height */
+    border-radius: 15px; /* Rounded corners */
+}
+
+.course-contents {
+    background-color: #f8f9fa; /* Light background for course contents */
+    padding: 20px; /* Padding inside course contents */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below */
+}
+
+.course-contents h3 {
+    font-size: 20px; /* Font size for course title */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.course-contents ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.course-contents ul li {
+    padding: 10px 0; /* Padding for list items */
+    border-bottom: 1px solid #ccc; /* Bottom border for separation */
+}
+
+.book-offer {
+    background-color: #f0f0f0; /* Light background for book offer */
+    padding: 15px; /* Padding inside offer */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.book-offer h3 {
+    font-size: 18px; /* Font size for offer title */
+}
+

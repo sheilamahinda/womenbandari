@@ -1,0 +1,112 @@
+.contact-container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .contact-left {
+    flex: 1;
+    background-color: #6A9C89;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  
+  .contact-left h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  
+  .contact-right {
+    flex: 1;
+    background-color: #f8f8f8;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .contact-right h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  
+  .form-group:last-child {
+    margin-right: 0;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .submit-button {
+    background-color: #16423C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #555;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #888;
+  }
+    .email-again-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .success-message {
+      color: green;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+  
+    .email-again-button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  
+    .email-again-button:hover {
+      background-color: #218838;
+    }

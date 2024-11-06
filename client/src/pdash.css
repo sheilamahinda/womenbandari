@@ -1,0 +1,284 @@
+/* pdash.css */
+
+/* General styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #000;
+}
+
+.sidebar-logo img {
+  height: 50px;
+  /* Adjust the height to suit your design */
+  width: auto;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Add this block to style the links inside the menu */
+.sidebar-menu li a {
+  color: inherit;
+  /* Inherit color from the parent */
+  text-decoration: none;
+  /* Remove underline */
+  display: block;
+  /* Ensure the whole li area is clickable */
+  width: 100%;
+  height: 100%;
+}
+
+/* Hover effect for both li and links */
+.sidebar-menu li:hover,
+.sidebar-menu li a:hover,
+.menu-item.active {
+  background-color: #e0e0e0;
+  color: #000;
+  /* Ensure the text color is black on hover */
+}
+
+/* Optional: For upgrade button styling */
+.sidebar-upgrade {
+  margin-top: auto;
+}
+
+
+.upgrade-button {
+  background-color: #16423C;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Header Styles */
+.header {
+  background-color: #fff;
+  padding: 20px;
+  /* border-bottom: 1px solid #e0e0e0; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  font-size: 16px;
+}
+
+.contact-btn {
+  background-color: #16423C;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Dashboard Styles */
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-body {
+  display: flex;
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.dashboard-content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.dashboard-welcome h2 {
+  font-size: 24px;
+
+}
+
+.dashboard-welcome p {
+  color: black;
+}
+
+.progress-section {
+  display: flex;
+  /* Ensure the cards are in a row */
+  gap: 20px;
+  /* Space between the cards horizontally */
+  margin-bottom: 20px;
+  /* Space below the progress section */
+}
+
+.progress-card {
+  background-color: #C4DAD2;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  margin-bottom: 20px;
+  /* Add margin to create vertical space */
+}
+
+.score,
+.progress {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.recent-courses {
+  margin: 20px 0;
+}
+
+.courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+.profile-image {
+  flex-shrink: 0;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-details {
+  flex-grow: 1;
+}
+
+.profile-details h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.profile-details p {
+  color: #666;
+  margin: 10px 0 0;
+}
+
+.class-timetable {
+  margin-top: 20px;
+}
+
+.timetable-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.timetable-table th,
+.timetable-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.timetable-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.timetable-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.timetable-table tr:hover {
+  background-color: #e0e0e0;
+}
+ /* Opportunities List */
+ .opportunities-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.opportunities-list li {
+  background-color: #f4f4f8;
+  border-left: 4px solid #4a90e2;
+  margin-bottom: 12px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: flex-start;
+}
+
+.opportunities-list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.opportunities-list strong {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.opportunities-list em {
+  color: #777;
+  font-size: 14px;
+}
+
+.opportunities-list li::before {
+  content: '🔹';
+  margin-right: 12px;
+  font-size: 18px;
+  color: #4a90e2;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .opportunities-list li {
+    flex-direction: column;
+    padding: 12px;
+  }
+}

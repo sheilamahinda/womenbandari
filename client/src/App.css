@@ -1,0 +1,361 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #6A9C89;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.App {
+  font-family: Arial, sans-serif;
+  color: #ddd;
+  background-color: #111;
+  line-height: 1.6;
+}
+/* General Reset */
+body, html, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+ 
+.logo img {
+  height: 70px; /* Adjust the height to suit your design */
+  width: auto;  /* Maintain the aspect ratio of the logo */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-btn {
+  background-color: #16423C;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative; /* Establish a positioning context for the pseudo-element */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  width: 100vw; /* Ensure the hero section takes full width */
+  height: 641px; /* Set the desired height for the hero section */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+}
+
+/* Pseudo-element for the background image */
+.hero::before {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute; /* Position it absolutely within the hero section */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  bottom: 0; /* Align to the bottom */
+  background-image: url('../public/hrm.jpg'); /* Set the background image */
+  background-size: cover; /* Ensure the image covers the area */
+  background-position: center;
+  opacity: 0.35; /* Set the desired opacity for the background */
+  z-index: 0; /* Place it behind the content */
+}
+
+/* Ensure text and other content is above the background */
+.hero > * {
+  position: relative; /* Set the position for content to be above the pseudo-element */
+  z-index: 1; /* Bring content above the pseudo-element */
+}
+
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffff;
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.hero h1 .highlight-green {
+  color: #6A9C89; /* Green color for the highlighted part */
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 20px auto; /* Center horizontally and add bottom margin */
+}
+
+.hero .cta-btn {
+  background-color: #16423C;
+  padding: 15px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 30px; /* Add margin-top to create space above the button */
+}
+
+
+.full-width {
+  grid-column: span 12; /* Span all 12 columns */
+}
+.challenges-solutions {
+  padding: 40px 20px; /* Reduced top and bottom padding */
+  background-color: #fff;
+  color: #000; /* Change text color to black for visibility */
+  text-align: center;
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Space between the columns */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.challenges-solutions h2 {
+  font-size: 68px; /* Increased font size for headings */
+  color: #16423C;
+  margin-bottom: 20px;
+}
+
+.challenges-solutions p {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.challenges-solutions .column {
+  flex: 1; /* Allow columns to grow equally */
+  margin: 0 20px; /* Add some margin for spacing */
+  min-width: 280px; /* Minimum width for responsiveness */
+}
+
+.challenges-solutions .column img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.challenges-solutions .column p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000; /* Ensure text is visible */
+}
+
+
+
+
+.welcome {
+  text-align: center;
+  padding: 50px 120px; /* Increased left and right padding for more spacing */
+  background-color: #f9f9f9;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.welcome p {
+  max-width: 800px; /* Set a maximum width for the paragraph */
+  margin: 0 auto; /* Center the paragraph */
+}
+
+
+
+
+
+.standout {
+  background-color: #fff;
+  color: #000;
+  padding: 80px 20px;
+  display: flex; /* Use Flexbox for layout */
+  align-items: center; /* Vertically center items */
+  justify-content: center; /* Horizontally center items */
+  gap: 20px; /* Space between image and text */
+  text-align: center; /* Center text inside the content div */
+ 
+}
+.standout img {
+  width: 385px; /* Adjust the size for your circular image */
+  height: 385px; /* Ensure height and width are equal */
+  object-fit: cover; /* Crop the image to fit the circle */
+  border-radius: 50%; /* Create a circular shape */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+
+.standout .content {
+  max-width: 700px; /* Limit the width of the content */
+}
+
+.standout h2 {
+  font-size: 36px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.standout p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 40px 0; /* Add bottom margin for spacing */
+}
+
+.standout .learn-more-button {
+  background-color: #16423C;
+  padding: 15px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  border: none; /* Remove default border from the button */
+  cursor: pointer; /* Improve UX with pointer cursor */
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden; /* Hide overflow to show only visible slides */
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.testimonial-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 250s linear infinite; /* Infinite horizontal scroll */
+}
+
+.slide-image {
+  width: 400px; /* Adjust the width of the image */
+  margin-right: 20px; /* Space between slides */
+}
+
+.slide-image img {
+  width: 100%; /* Ensure image fills the container */
+  border-radius: 10px; /* Add border-radius for styling */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Scroll to the end of the container */
+  }
+}
+
+.full-width {
+  grid-column: span 12; /* Span all 12 columns */
+}
+
+.student-feedback {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  color: #000;
+}
+
+.feedback-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feedback {
+  background-color: #C4DAD2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.explore-courses {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  color: #000;
+}
+
+.explore-btn {
+  background-color: #16423C;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #f9f9f9;
+  color: black;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: black;
+  text-decoration: none;
+}
