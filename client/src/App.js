@@ -19,7 +19,7 @@ import ElearningProvider, {
 } from "./context/ElearningContext";
 import ProtectedRoute from "./secure/ProtectedRoute";
 import ProtectLoggedIn from "./secure/ProtectLoggedIn";
-import { Grade } from "./Grade";
+import { Grade } from "./pages/Grade/Grade";
 import ContactForm from "./ContactForm";
 import Index from "./pages/chat";
 import { useIsPermitted } from "./hooks/useIsPermitted";
@@ -106,7 +106,7 @@ function App() {
             }
           />
           <Route
-            path="/grades"
+            path="/grade"
             element={
               <DashboardLayout>
                 <Grade />

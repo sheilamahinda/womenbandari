@@ -249,7 +249,7 @@ const sidebarItems = [
   {
     id: 3,
     name: "Progress",
-    path: "grades",
+    path: "grade",
     icon: <Grade />,
   },
   
