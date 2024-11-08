@@ -3,12 +3,10 @@ const path = require("path");
 const resourcesModel = require("../../models/resources.js");
 
 const controlAddProject = async (req, res) => {
-  console.log(req.body);
-
   try {
     const uploadedFile = {
       data: fs.readFileSync(
-        path.join(__dirname + "/uploads/" + req.file.filename)
+        path.join(__dirname, "../../public/uploads", req.file.filename)
       ),
       name: req.file.filename,
       contentType: req.file.mimetype,

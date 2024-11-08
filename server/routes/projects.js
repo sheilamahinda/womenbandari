@@ -1,6 +1,7 @@
 const { Router } = require("express");
 const path = require("path");
 const multer = require("multer");
+const fs = require("fs");
 
 const controlAddProject = require("../controller/projects/add_project");
 const controlGetProjects = require("../controller/projects/get_projects");
@@ -10,11 +11,19 @@ const resourcesModel = require("../models/resources");
 const controlAddRecording = require("../controller/projects/add_recording");
 const recordingsModel = require("../models/recordings");
 
+const storage1 = multer.diskStorage({
+  destination: (req, file, cb) => {
+    return cb(null, "public/uploads/");
+  },
+  filename: (req, file, cb) => {
+    return cb(null, Date.now() + path.extname(file.originalname));
+  },
+});
+
 // Set up multer storage
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    // cb(null, "controller/projects/uploads/");
-    cb(null, "public/uploads/");
+    return cb(null, "public/uploads/");
   },
   filename: (req, file, cb) => {
     cb(null, Date.now() + path.extname(file.originalname));
@@ -30,11 +39,13 @@ const videoFilter = (req, file, cb) => {
   }
 };
 
+const uploadPdf = multer({ storage: storage1 });
+
 const upload = multer({ storage, fileFilter: videoFilter });
 
 const router = Router();
 
-router.post("/addPdf", upload.single("file"), controlAddProject);
+router.post("/addPdf", uploadPdf.single("file"), controlAddProject);
 
 router.post("/addRecording", upload.single("file"), (req, res, next) => {
   req.savedFileName = req.file.filename;

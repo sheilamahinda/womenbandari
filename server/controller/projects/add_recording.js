@@ -5,8 +5,6 @@ const controlAddRecording = async (req, res) => {
     const { title } = req.body;
     const file = req.file;
 
-    console.log(file);
-
     if (!file) {
       return res.status(400).json({ message: "No video file uploaded!" });
     }

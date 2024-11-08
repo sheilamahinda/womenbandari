@@ -241,14 +241,34 @@ const Resources = () => {
   };
 
   const DownloadCard = ({ file, title, subtitle, instructor }) => {
+    // const name = file.name;
+
+    // const type = name.split(".").pop();
+
+    // const data = file.data;
+    // const arr = [...data.data];
+    // const uint8Array = new Uint8Array(arr);
+    // const blob = new Blob([uint8Array], { type: "application/pdf" });
+
+    // const pdfUrl = URL.createObjectURL(blob);
+
     const name = file.name;
 
-    const type = name.split(".").pop();
+    const extension = name.split(".").pop().toLowerCase();
+
+    let mimeType;
+    if (extension === "pdf") {
+      mimeType = "application/pdf";
+    } else if (extension === "docx") {
+      mimeType =
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+    }
 
     const data = file.data;
     const arr = [...data.data];
     const uint8Array = new Uint8Array(arr);
-    const blob = new Blob([uint8Array], { type: "application/pdf" });
+
+    const blob = new Blob([uint8Array], { type: mimeType });
 
     const pdfUrl = URL.createObjectURL(blob);
 
@@ -277,7 +297,7 @@ const Resources = () => {
       }
     };
 
-    const isHandsOn = () => type == "mp4";
+    const isHandsOn = () => extension == "mp4";
 
     const handlePlay = () => {
       try {
@@ -309,7 +329,7 @@ const Resources = () => {
       <div className="download-card">
         <img
           style={{ width: "70px", height: "70px" }}
-          src={isHandsOn() ? mp4 : type === "pdf" ? pdf : docx}
+          src={isHandsOn() ? mp4 : extension === "pdf" ? pdf : docx}
           alt={title}
           className="card-image"
         />
@@ -525,3 +545,4 @@ const Resources = () => {
 };
 
 export default Resources;
+

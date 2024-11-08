@@ -36,7 +36,7 @@ if (process.env.NODE_ENV === "production") {
 }
 app.use(
   session({
-    secret: "trustproxy",
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
     store: new MongoDBStore({
